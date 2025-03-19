@@ -44,7 +44,7 @@ main {
 }
 
 .card-info {
-  font-size: 1.5em;
+  font-weight: bold;
   background: #1f1f1f;
   border-left: solid 4px orange;
   padding: 40px;
@@ -53,6 +53,9 @@ main {
   width: 100%;
 }
 
+.card-info summary {
+  font-size: 1.5em;
+}
 .card-summary {
   text-align: left;
   background: #1f1f1f;
@@ -61,11 +64,6 @@ main {
   border-radius: 5px;
   margin-bottom: 5%;
   width: 100%;
-}
-
-.card-summary p,
-.card-summary ul,
-.card-summary li {
   font-weight: bold;
 }
 
