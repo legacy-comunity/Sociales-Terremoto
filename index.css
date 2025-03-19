@@ -32,6 +32,12 @@ body {
   margin-bottom: 5%;
 }
 
+.card-summary p,
+.card-summary ul,
+.card-summary li, {
+  font-weight: bolz;
+}
+
 summary {
   margin-bottom: 20px;
 }
