@@ -30,14 +30,37 @@ body {
   padding: 20px;
   border-radius: 5px;
   margin-bottom: 5%;
+  transition: all 0.3s ease-in-out;
 }
 
 .card-summary p,
 .card-summary ul,
-.card-summary li, {
+.card-summary li {
   font-weight: bold;
 }
 
 summary {
   margin-bottom: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.card-summary[open] summary {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.card-summary > *:not(summary) {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
