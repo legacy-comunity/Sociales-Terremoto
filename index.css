@@ -5,8 +5,12 @@
 }
 
 body {
+  padding-left: 10%;
+  padding-right: 10%;
   background: #2c2c2c;
 }
 
-.info {
+.card-info {
+  border-left: solid 4px lawngreen;
+  width: 100%;
 }
